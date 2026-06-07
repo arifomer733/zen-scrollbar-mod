@@ -31,3 +31,4 @@ Once the extension is signed and published, you can install the `.xpi` file dire
 ## License
 
 This project is licensed under the MIT License.
+
