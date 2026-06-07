@@ -1,0 +1,38 @@
+/* ================================
+   🧊 Zen Scrollbar Mod v1
+   Thin + Fade + Non-intrusive
+================================== */
+
+/* Firefox-native control (most important) */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(140, 140, 140, 0.25) transparent;
+}
+
+/* WebKit fallback (some UI parts) */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+/* Track stays invisible */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Thumb: subtle by default */
+::-webkit-scrollbar-thumb {
+  background-color: rgba(140, 140, 140, 0.18);
+  border-radius: 10px;
+  transition: background-color 0.25s ease, width 0.25s ease;
+}
+
+/* Hover = becomes readable */
+:hover::-webkit-scrollbar-thumb {
+  background-color: rgba(140, 140, 140, 0.55);
+}
+
+/* Active drag = stronger feedback */
+::-webkit-scrollbar-thumb:active {
+  background-color: rgba(140, 140, 140, 0.7);
+}
